@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  }
+  nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:80px;
+    background-color:rgb(4, 4, 54);
+  }
+  nav ul{
+    display:flex;
+    justify-content:center;
+  }
+  nav ul li{
+    list-style:none;
+    margin:0 23px;
+  }
+  nav ul li a{
+    text-decoration:none;
+    color:white;
+    position:relative;
+  }
+  nav ul li a::after{
+    content:'';  /* when we add text in ' ' then it prints below the underline*/
+    /* width:100%; width of underline */
+    width:0;   /* it hide the underline*/
+    height:3px;   /*height of underline */ 
+    background:#ff004f;
+    position:absolute;
+    left:0;    /* when we add value then text slide left from underline*/
+    bottom:-6px;  /* underline goes downword from text */
+    transition:0.5s;/* it apply transition on underline*/
+  }
+  nav ul li a:hover::after{
+    width:100%;   /* it shows width of underline after currsor goes on text */
+  }
+  main hr{
+    border:0; 
+    background-color:#f197a0;
+    height:1.2px;
+    margin:60px 84px;
+  }
+
+/* -------------------- Sticky Nav Bar -------------------------- */
+ 
+ .sticky{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:8rem;
+  padding-bottom:0;
+  box-shadow:0 0 2rem 0 rgba(0,0,0,0.1);
+ }
+ .sticky.second_section1{
+ margin-top:80px;
+ }
+
+  .left{ 
+    font-size:1.5rem;
+  }
+  .firstSection{
+    display:flex;
+    justify-content:space-around;
+    margin:140px 0;
+  }
+  .firstSection > div{
+    width:30%;
+  }
+  .leftSection{
+    font-size:2.5rem;
+  }
+  .leftSection .buttons{
+    padding:20px 0;
+  }
+  .leftSection .button{
+    padding:10px; 
+    background:#1e2167;
+    color:white;
+    border:2px solid white;
+    border-radius:6px;
+    font-size: 20px;
+    cursor:pointer;
+  }
+  .rightSection{
+    width:34px;
+  }
+  .rightSection img{
+    width:80%;
+  }
+  .purple{
+    color:purple;
+  }
+  .text-gray{
+    color:gray;
+  }
+  #element{
+    color:purple;
+  }
+  .thirdSection{
+    max-width:80vw;
+    margin:auto;
+    height:50vh;    /*when scroll down we had to space*/
+  }
+
+  /*------------------ About section  ------------------*/
+  .About-img{
+    height: 700px;
+    width: 614px;
+    margin-left:60px;
+  }
+  #About_me{
+    padding:80px 0;
+    color:#ababab;
+  }
+
+
+  .tag-bold-flex{
+    background:#04C2C9;
+    height:30px;
+    color:white;
+    font-family:'Raley-bold';
+  }
+  .secondSection-row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+  }
+  .secondSection-row-col1{
+    flex-basis:40%;
+  }
+  .secondSection-row-col1 img{
+    width:100%;
+    border-radius:15px;
+    
+  }
+  .secondSection-row-col2{
+    flex-basis:50%; 
+    padding-right:25px;
+  }
+  .sub-title{
+    font-size:60px;
+    font-weight: 600;
+    color: #ffff;
+  }
+  .tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+  }
+  .tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    position:relative;
+  }
+  .tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+  }
+  .tab-links.active-link::after{
+    width:80%;
+  }
+
+  .tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+  }
+  .tab-contents ul li span{
+    color:#ff0095;
+    font-size:14px;
+  }
+  .tab-contents{
+    display:none;
+    margin:0;
+    padding:0;
+    font-family:"Ubuntu",sans-serif;
+  }
+  .tab-contents.active-tab{
+     display:block;               /*--it create a block for visible skills and oll */
+  }
+
+  /* .tab-contents div{
+    min-height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#111;
+  } */
+
+  /* --------------------------------------- Skills Information -------------------------------------------- */
+  .skills-tag{
+    width:100%;
+    max-width:600px;
+    padding:0 20px;
+  }
+  .skill-name{
+     font-size:18px;
+     font-weight:700;
+     color:#f1f1f1;
+     text-transform:uppercase;
+     margin:20px 0;
+  }
+  .skill-bar{
+    height:14px;
+    background:#282828;
+    border-radius:3px;
+  }
+  .skill-per{
+    height:14px;
+    background:#d13639;
+    border-radius:3px;
+    position:relative;
+    animation:fillbars 2.5s 1;
+  }
+  .skill-per::before{
+    content:attr(per);
+    position:absolute;
+    padding:4px 6px;
+    background:#f1f1f1;
+    border-radius:4px; 
+    font-size:12px;
+    top:-35px;
+    right:0;  
+    transform:translateX(50%);
+  }
+  .skill-per::after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#f1f1f1;
+    top:-20px;
+    right:0;
+    transform:translateX(50%) rotate(45deg);
+    border-radius:2px;
+  }
+  @keyframes fillbars{
+    from{
+      width:0;
+    }
+    to{
+      width:100%; 
+    }
+  }
+
+
+  /* --------------------------------------- Skills Information -------------------------------------------- */
+
+
+
+
+
+
+/*--------------------------------work experience-------------------------------------*/
+/* .thirdSection h1{
+  font-size:1.9rem;
+}
+.thirdSection .box{
+  background:white;
+  width:80vw;
+  height:2px;
+  margin:53px 0;
+  display:flex;
+}
+.thirdSection .verticle{
+  height:93px;
+  width:1px;
+  background-color:white;
+  margin:0 134px;       0 is top-bottom and 100 is left-right margin */
+/* } */
+/* .image-top{
+  width:23px;
+  position:relative;
+  top:-32px;
+  left:-9px;
+}
+.verticle-title{
+position:relative;
+top:75px;
+width:150px;
+font-size:14px;
+}
+.verticle-desc{
+position:relative;
+top:86px;
+color:gray;
+width:150px;
+font-size:9px;
+}
+footer{
+  background-color:#0e0e1a;
+}
+.footer{
+  display:flex;
+  padding:23px 122px;
+  justify-content: space-evenly;
+}
+footer ul{
+  list-style:none;
+}
+
+.footer > div{
+  width:223px; 
+}
+*/
+.footer-rights{
+ text-align:center;
+ color:gray;
+ padding:12px 0;
+} 
+/* --------------------------------work experience------------------------------------- */
+/* --------------------------------Projects ------------------------------- */
+
+.proj_collection{
+  display:flex;
+  justify-content:center;
+}
+.p_img{
+  margin:50px 50px 0px 50px;
+  height:200px;
+  width:200px;
+  cursor:pointer;
+}
+.proj_collection img{
+  text-decoration:none; 
+  font-size:30px;
+  margin-right:15px;
+  color:#ababab;
+  display:inline-block;
+  transition:transform 0.05s;
+}
+.proj_collection img:hover{
+  color:#ff004f;
+  transform:translateY(-5px); 
+}
+.social-icons a{
+  text-decoration:none; 
+  font-size:30px;
+  margin-right:15px;
+  color:#ababab;
+  display:inline-block;
+  transition:transform 0.05s;
+}
+.social-icons a:hover{
+  color:#ff004f;
+  transform:translateY(-5px);    /*move icon by 5px */
+}
+/* --------------------------------Projects ------------------------------- */
+
+/* -----------------------------Contact Mee------------------------------- */
+
+.social-icons {
+  margin-top: 23px;
+}
+.row{
+  display:flex;
+}
+.contact-left{
+  flex-basis:35%;
+  margin-left:200px;
+}
+.contact-right{
+  flex-basis:60%;
+}
+.contact-left p{
+  margin-top:30px;
+}
+.contact-left p i{
+  color:#ff004f;
+  margin-right:15px;
+  font-size:25px;
+}
+.social-icons a{
+  text-decoration:none; 
+  font-size:30px;
+  margin-right:15px;
+  color:#ababab;
+  display:inline-block;
+  transition:transform 0.05s;
+}
+.social-icons a:hover{
+  color:#ff004f;
+  transform:translateY(-5px);    /*move icon by 5px */
+}
+.btn{
+  background:#0e0e1a;
+  display:block;
+  margin:50px auto;
+  width:fit-content;
+  border:1px solid #ff004f;
+  padding:14px 50px;
+  border-radius:6px; 
+  text-decoration:none;
+  color:white;
+  transition:background 0.5s;
+}
+.btn:hover{
+  background:#ff004f;
+}
+.btn.btn2{
+  display:inline-block;
+}
+button.btn.btn2 {
+  margin: 50px 255px;
+}
+.contact-right form{
+width:60%;
+}
+form input,form textarea{
+  width:100%;
+  border:0;
+  outline:none;
+  background:#262626;
+  padding:15px;
+  margin:15px;
+  color:#fff;
+  font-size:15px 0;
+  border-radius:6px; 
+}

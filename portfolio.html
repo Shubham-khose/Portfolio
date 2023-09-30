@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="portfolio.css"/>
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style></style>
+    <script src="https://kit.fontawesome.com/ee1eb1b653.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="sticky">
+      <nav>
+        <div class="left">Shubham's Porfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About_me">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="rightSection">
+          <img src="coder1.png" alt="" />
+        </div>
+        <div class="leftSection">
+          Hi,my name is <span class="purple">Shubham</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="button">Download Resume</button>
+            <button class="button">Visit Github</button>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="second_section1" id="About_me">
+        <div class="secondSection-Container">
+          <div class="secondSection-row">
+            <div class="secondSection-row-col1">
+              <img src="shubham.jpg" class="About-img" />
+            </div>
+            <div class="secondSection-row-col2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                I'm a Web Developer 
+                I have serious passion for Html ,Css 
+                Javascript, c , c++ , Java .
+                Let's make something special.
+              </p>
+              <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </div>
+                <!-- <div class="tab-links" onclick="opentab('experience')">
+                  Projects
+                </div> -->
+                <div class="tab-links" onclick="opentab('education')">
+                  Education
+                </div>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <div class="skills-tag">
+                  <div class="skill-tag">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="90%" style="max-width:90%"></div>
+                    </div>
+                  </div><div class="skill-tag">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="70%" style="max-width:70%"></div>
+                    </div>
+                  </div><div class="skill-tag">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="60%" style="max-width:60%"></div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <!-- <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2021 - Current</span><br />UI/UX Design Training at ET
+                    Institute
+                  </li>
+                  <li>
+                    <span>2019 - 2021</span><br />Team lead at StarApp LLC.
+                  </li>
+                  <li>
+                    <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                    Digital Ltd.
+                  </li>
+                  <li>
+                    <span>2016 - 2017</span><br />Internship at ekart eCommerce.
+                  </li>
+                </ul>
+              </div> -->
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2019</span><br /> Ssc from Dharashiv
+                  </li>
+                  <li><span>2021</span><br />Hsc from Dharashiv.</li>
+                  <li><span>2023-24</span><br />In BCA third year from Ahmednagar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="thirdSection">
+        <span class="text-gray">work i have done so far</span>
+        <h1>work Experience</h1>
+        <div class="box">
+          <div class="verticle">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="verticle-title">HTML Developer (2022-2023)</div>
+            <div class="verticle-desc">
+              lorem ispum dolor set amet conceture adipisicing elit, libero unde
+              omnis ullam,enim facilis possimus accus Dolors mollitia
+            </div>
+          </div>
+          <div class="verticle">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="verticle-title">HTML Developer (2022-2023)</div>
+            <div class="verticle-desc">
+              lorem ispum dolor set amet conceture adipisicing elit, libero unde
+              omnis ullam,enim facilis possimus accus Dolors mollitia
+            </div>
+          </div>
+          <div class="verticle">
+            <img class="image-top" src="whatsapp.png" alt="" />
+            <div class="verticle-title">Whatsapp Developer (2022-2023)</div>
+            <div class="verticle-desc">
+              lorem ispum dolor set amet conceture adipisicing elit, libero unde
+              omnis ullam,enim facilis possimus accus Dolors mollitia
+            </div>
+          </div>
+          <div class="verticle">
+            <img class="image-top" src="twitter.png" alt="" />
+            <div class="verticle-title">Twitter Developer (2022-2023)</div>
+            <div class="verticle-desc">
+              lorem ispum dolor set amet conceture adipisicing elit, libero unde
+              omnis ullam,enim facilis possimus accus Dolors mollitia
+            </div>
+          </div>
+          <div class="verticle">
+            <img class="image-top" src="insta.png" alt="" />
+            <div class="verticle-title">Instagram Developer (2022-2023)</div>
+            <div class="verticle-desc">
+              lorem ispum dolor set amet conceture adipisicing elit, libero unde
+              omnis ullam,enim facilis possimus accus Dolors mollitia
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!----------------------------- PROJECTS --------------------------->
+      <hr>
+      <div class="Project_cont" id="Projects">
+        <center><h1 class="sub-title">Projects</h1>
+          <div class="proj_collection">
+            <div class="project_img">
+              <img src="music_palyer.png" class="p_img">
+              <h5>Music Plalyer</h5>
+            </div>
+            <div>
+              <img src="calculator.png" class="p_img">
+              <h5>Calculator</h5>
+            </div>
+          </div>
+          <div class="proj_collection">
+            <div>
+              <img src="age_calculator.png" class="p_img">
+              <h5>Age Calculator</h5>
+            </div>
+            <div>
+              <img src="Netflix.png" class="p_img">
+              <h5>Netflix Clone</h5>
+            </div>
+          </div>
+        </center>
+      </div>
+      <hr>
+      <!-- ---------------------------PROJECTS------------------------- -->
+      <!-- --------------------Contact me-------------------------- -->
+      <div id="Contact">
+        <div class="container">
+          <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>Contact@example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>7620239790</p>
+            <div class="social-icons">
+              <a href=""><i class="fab  fa-instagram"></i></a>
+              <a href=""><i class="fab  fa-whatsapp"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- <a href="NextWave/shubham" download class="btn btn2">Downlad CV</a> -->
+          </div>
+          <div class="contact-right" >
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required/>
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div> 
+        </div>
+      </div>
+      <!-- ----------------------------Contact Section------------------------------------ -->
+    </main>
+    <!-- <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Shubham's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+      </div> 
+      -->
+      <div class="footer-rights">
+        
+        copyright &#169;shubhamsportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Coder", "Web Designer "],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <!-- <script>
+      const nav_header = document.querySelector(".header");
+      const second_section1 = document.querySelector(".second_section1");
+      const observer = new IntersectionObserver((entries)=>{
+        const ent=entries[0];
+        console.log(ent);
+        ent.isIntersecting == false 
+        ? nav_header.classList.add('sticky'):
+        nav_header.classList.remove('sticky');
+      }, 
+       {
+        root: null,
+        rootMargin:"-80px",
+        threshold:0,
+      })
+
+      observer.observe(second_section1);
+    </script> -->
+  </body>
+</html>
